@@ -1,8 +1,9 @@
-import Image from "next/image";
-import { Calligraphy } from "./data/productdata";
-import WhatsAppButton from "./components/WhatsAppButton";
+import React from 'react'
+import { Canvas } from '../data/productdata'
+import WhatsAppButton from '../components/WhatsAppButton'
 
-export default function Home() {
+
+function page() {
   return (
     <section className='text-blue-900 body-font'>
 
@@ -10,7 +11,7 @@ export default function Home() {
 
         <div className='flex flex-wrap -m-2'>
 
-          {Calligraphy.map((item, index) => (
+          {Canvas.map((item, index) => (
 
             <div
               key={index}
@@ -31,7 +32,7 @@ export default function Home() {
                     {item.name}
                   </h1>
                 </div>
-              <WhatsAppButton/>
+      <WhatsAppButton/>
               </div>
 
             </div>
@@ -45,3 +46,5 @@ export default function Home() {
     </section>
   )
 }
+
+export default page
