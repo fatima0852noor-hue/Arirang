@@ -25,7 +25,7 @@ function page() {
                   src={item.image}
                   alt={item.name}
                 />
-
+                
                 <div className='p-5'>
                   <h1 className='title-font sm:text-xl text-sm font-semibold text-blue-900 mb-3'>
                     {item.name}
