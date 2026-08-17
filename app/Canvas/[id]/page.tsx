@@ -24,7 +24,7 @@ export default function CanvasDetailPage() {
   const myWhatsAppNumber = "923000000000"; 
   const currentUrl = typeof window !== "undefined" ? window.location.href : "";
   const message = `Hello, I want to order this product:\n\n*Name:* ${product.name}\n*Price:* Rs. ${product.price}\n*Link:* ${currentUrl}`;
-  const whatsappUrl = `https://wa.me{myWhatsAppNumber}?text=${encodeURIComponent(message)}`;
+  const whatsappUrl = `https://wa.me/${myWhatsAppNumber}?text=${encodeURIComponent(message)}`;
 
   return (
     <main style={{ maxWidth: "1200px", margin: "0 auto", padding: "40px 20px", fontFamily: "sans-serif" }}>

@@ -1,5 +1,6 @@
 import React from 'react'
-import {  Calligraphy} from '../data/productdata'
+import Link from 'next/link'
+import { Calligraphy } from '../data/productdata'
 import WhatsAppButton from '../components/WhatsAppButton'
 
 function page() {
@@ -10,28 +11,29 @@ function page() {
 
         <div className='flex flex-wrap -m-2'>
 
-          {Calligraphy.map((item, index) => (
+          {Calligraphy.map((item) => (
 
             <div
-              key={index}
+              key={item.id}
               className='p-4 lg:w-1/3 sm:w-1/2 w-full md:w-1/2'
             >
 
-              {/* Card */}
               <div className='h-full rounded-lg overflow-hidden text-center shadow-md hover:shadow-xl transition duration-300'>
 
-                <img
-                  className="lg:h-80 md:h-60 w-full object-cover"
-                  src={item.image}
-                  alt={item.name}
-                />
+                <Link href={`/Calligraphy/${item.id}`} className='block'>
+                  <img
+                    className="lg:h-80 md:h-60 w-full object-cover"
+                    src={item.image}
+                    alt={item.name}
+                  />
+                </Link>
 
                 <div className='p-5'>
-                  <h1 className='title-font sm:text-3xl text-xl font-semibold text-blue-900 mb-3'>
+                  <Link href={`/Calligraphy/${item.id}`} className='title-font text-sm font-semibold text-black mb-3 block'>
                     {item.name}
-                  </h1>
+                  </Link>
                 </div>
-              <WhatsAppButton/>
+                <WhatsAppButton/>
               </div>
 
             </div>

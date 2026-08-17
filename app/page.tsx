@@ -27,7 +27,7 @@ export default function Home() {
                 />
 
                 <div className='p-5'>
-                  <h1 className='title-font sm:text-3xl text-xl font-semibold text-blue-900 mb-3'>
+                  <h1 className='title-font  text-sm font-semibold text-black mb-3'>
                     {item.name}
                   </h1>
                 </div>
