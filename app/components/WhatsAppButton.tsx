@@ -10,7 +10,7 @@ type Props = {
 };
 
 export default function WhatsAppButton({
-  phone = "03014781858",
+  phone = "03454901971",
   message = "Hi, I want to know more about your products",
   label = "Chat",
   className = "",

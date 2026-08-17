@@ -10,7 +10,7 @@ const Navbar = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   
   return (
-    <nav className="bg-[#CFE8F7] shadow-md sticky top-0 z-50">
+    <nav className="bg-gray-800 shadow-md sticky top-0 z-50">
 
       <div className="max-w-7xl mx-auto px-6">
 
